@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">AndroidInternship</string>
     <string name="click_me">Click Me</string>
+    <string name="Task3" />
+    <string name="Task3_ListView">Task 3 (List View)</string>
 </resources>

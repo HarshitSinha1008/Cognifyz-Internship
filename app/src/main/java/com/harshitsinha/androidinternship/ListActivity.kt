@@ -1,6 +1,8 @@
 package com.harshitsinha.androidinternship
 
 import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,6 +13,20 @@ class ListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_list)
+        val listView = findViewById<ListView>(R.id.listView)
+        val fruits = arrayOf(
+            "Apple",
+            "Banana",
+            "Mango",
+            "Orange",
+            "Grapes"
+        )
+        val adapter = ArrayAdapter(
+            this,
+            android.R.layout.simple_list_item_1,
+            fruits
+        )
+        listView.adapter = adapter
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

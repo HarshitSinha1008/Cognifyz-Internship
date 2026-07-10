@@ -1,5 +1,6 @@
 package com.harshitsinha.androidinternship
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
@@ -20,6 +21,11 @@ class MainActivity : AppCompatActivity() {
                 "Button Clicked!",
                 Toast.LENGTH_SHORT
             ).show()
+        }
+        val btnList = findViewById<Button>(R.id.btnTask3)
+        btnList.setOnClickListener {
+            val intent = Intent(this, ListActivity::class.java)
+            startActivity(intent)
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
