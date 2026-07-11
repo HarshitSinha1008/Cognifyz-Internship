@@ -3,4 +3,20 @@
     <string name="click_me">Click Me</string>
     <string name="Task3" />
     <string name="Task3_ListView">Task 3 (List View)</string>
+    <string name="task_2">Task 2</string>
+    <string name="task_2_button_interaction">Task 2 - Button Interaction</string>
+    <string name="button_interaction">Button Interaction</string>
+    <string name="open">Open</string>
+    <string name="task_3">Task 3</string>
+    <string name="list_display">List Display</string>
+    <string name="task_4">Task 4</string>
+    <string name="basic_ui_layout">Basic UI Layout</string>
+    <string name="task_5">Task 5</string>
+    <string name="fetch_and_display_data">Fetch and Display Data</string>
+    <string name="android_internship_dashboard">Android Internship Dashboard</string>
+    <string name="choose_a_task_below">Choose a task below</string>
+    <string name="task_1">Task 1</string>
+    <string name="hello_world">Hello World</string>
+    <string name="current_screen">Current Screen</string>
+    <string name="button_interactio">Button Interaction</string>
 </resources>
