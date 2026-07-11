@@ -20,7 +20,7 @@ class DashboardActivity : AppCompatActivity() {
         }
         val btnTask2 = findViewById<Button>(R.id.btnTask2)
         btnTask2.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ButtonActivity::class.java)
             startActivity(intent)
         }
         val btnTask3 = findViewById<Button>(R.id.btnTask3)
@@ -28,15 +28,13 @@ class DashboardActivity : AppCompatActivity() {
             val intent = Intent(this, ListActivity::class.java)
             startActivity(intent)
         }
+        val btnTask4 = findViewById<Button>(R.id.btnTask4)
+
+        btnTask4.isEnabled = false
         val btnTask5 = findViewById<Button>(R.id.btnTask5)
         btnTask5.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-        }
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
         }
     }
 }

@@ -13,6 +13,8 @@ class ButtonActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_button)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "Task 2 - Button Interaction"
         val button = findViewById<Button>(R.id.btnclick)
         button.setOnClickListener {
             Toast.makeText(
@@ -26,5 +28,10 @@ class ButtonActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 }
