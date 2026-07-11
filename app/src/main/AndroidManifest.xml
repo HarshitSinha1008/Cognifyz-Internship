@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidInternship">
         <activity
+            android:name=".Task5Activity"
+            android:exported="false" />
+        <activity
             android:name=".ButtonActivity"
             android:exported="false" />
         <activity
@@ -28,8 +31,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

@@ -33,7 +33,7 @@ class DashboardActivity : AppCompatActivity() {
         btnTask4.isEnabled = false
         val btnTask5 = findViewById<Button>(R.id.btnTask5)
         btnTask5.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Task5Activity::class.java)
             startActivity(intent)
         }
     }
